@@ -13,6 +13,9 @@ const Header = () => {
 							My Profile
 						</CustomLink>
 					</li>
+					<li className={styles.listItem}>
+						<CustomLink to="/todo">ToDo list</CustomLink>
+					</li>
 				</ul>
 			</nav>
 		</header>
