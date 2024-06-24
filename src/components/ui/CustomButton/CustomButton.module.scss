@@ -1,0 +1,16 @@
+@use 'src/sass/_variables' as variables;
+
+.button {
+	padding: 5px 10px;
+	color: variables.$clr-text-secondary;
+	background-color: variables.$clr-bg-accent;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	transition: variables.$transition-main;
+
+	&:hover {
+		color: variables.$clr-text-accent;
+		background-color: variables.$clr-bg-main;
+		border: 1px solid variables.$clr-border-accent;
+	}
+}
