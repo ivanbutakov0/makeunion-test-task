@@ -1,0 +1,51 @@
+/* RESET */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: inherit;
+	resize: none;
+}
+
+/* GLOBALS */
+body {
+	font-family: 'Roboto', sans-serif;
+}
