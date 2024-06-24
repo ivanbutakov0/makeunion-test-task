@@ -1,0 +1,77 @@
+@use 'src/sass/_variables' as variables;
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 40px 0;
+
+	.title {
+		font-size: 30px;
+	}
+
+	.image {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		max-width: 350px;
+		width: 100%;
+		font-size: 16px;
+
+		.title {
+			font-size: 20px;
+		}
+
+		.contactItem {
+			border: 1px solid lightgray;
+			padding: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: variables.$transition-main;
+
+			&:hover {
+				background-color: lightgray;
+			}
+		}
+
+		.bio {
+			text-align: justify;
+		}
+
+		.inputContainer {
+			display: flex;
+			gap: 10px;
+
+			.input {
+				width: 100%;
+				padding: 5px;
+				border: 1px solid lightgray;
+				border-radius: 5px;
+			}
+		}
+
+		.textareaContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+			gap: 10px;
+			width: 100%;
+
+			.textarea {
+				width: 100%;
+				height: 70px;
+				padding: 5px;
+				border: 1px solid lightgray;
+				border-radius: 5px;
+			}
+		}
+	}
+}
