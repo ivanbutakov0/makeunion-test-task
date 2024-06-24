@@ -79,7 +79,7 @@ const Profile = () => {
 
 	return (
 		<section className={styles.profile}>
-			<h1 className={styles.title}>Профиль</h1>
+			<h1 className={styles.title}>Профиль (нажми на одно из полей)</h1>
 			<img
 				className={styles.image}
 				src="/profile-image.png"
@@ -126,7 +126,7 @@ const Profile = () => {
 							/>
 							<CustomButton
 								type="button"
-								onClick={() => handleDataSubmit('name')}
+								onClick={() => handleDataSubmit('bio')}
 							>
 								Сохранить
 							</CustomButton>
