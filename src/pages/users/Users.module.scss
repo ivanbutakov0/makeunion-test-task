@@ -1,0 +1,17 @@
+.users {
+	padding: 40px 0;
+	position: relative;
+
+	.title {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		margin-top: 40px;
+	}
+}

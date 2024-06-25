@@ -1,0 +1,35 @@
+@use 'src/sass/_variables' as variables;
+
+.dialog {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0;
+
+	.content {
+		background-color: variables.$clr-bg-main;
+		padding: 20px;
+		border-radius: 10px;
+
+		> *:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		.title {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.label {
+			font-style: italic;
+		}
+	}
+}

@@ -15,4 +15,8 @@
 	> *:not(:last-child) {
 		margin-bottom: 10px;
 	}
+
+	.label {
+		font-style: italic;
+	}
 }
