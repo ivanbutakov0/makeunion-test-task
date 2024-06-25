@@ -28,7 +28,7 @@
   <p align="center">
     <br />
     <br />
-    <a href="https://u-future-client.vercel.app/">View Demo</a>
+    <a href="https://makeunion-test-task.vercel.app/">View Demo</a>
   </p>
 </div>
 
@@ -52,7 +52,7 @@
 ![Product Name Screen Shot][profile-screenshot]
 ![Product Name Screen Shot][todo-screenshot]
 
-In this project I implemented profile page and simple todo app.
+In this project I implemented profile page, users fetch page and simple todo app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +68,7 @@ In this project I implemented profile page and simple todo app.
 
 ## Contact
 
-Project Link: [https://github.com/ivanbutakov0/u-future](https://github.com/ivanbutakov0/u-future)
+Project Link: [https://github.com/ivanbutakov0/makeunion-test-task](https://github.com/ivanbutakov0/makeunion-test-task)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
