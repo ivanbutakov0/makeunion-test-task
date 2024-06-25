@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { toast } from 'react-toastify'
 import { CustomButton } from '../../components/ui/CustomButton'
 import { CustomInput } from '../../components/ui/CustomInput'
 import styles from './Profile.module.scss'
@@ -49,6 +50,7 @@ const Profile = () => {
 					userData.name = name
 				}
 
+				toast.success('Имя пользователя изменено')
 				break
 			case 'bio':
 				const bio = bioRef?.current?.value
@@ -57,8 +59,8 @@ const Profile = () => {
 					userData.bio = bio
 				}
 
+				toast.success('Био изменено')
 				break
-
 			case 'contacts':
 				const contacts = contactsRef?.current?.value
 
@@ -66,6 +68,7 @@ const Profile = () => {
 					userData.contacts = contacts
 				}
 
+				toast.success('Контакты изменены')
 				break
 		}
 	}
