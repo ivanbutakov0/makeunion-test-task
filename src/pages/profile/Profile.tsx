@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { CustomButton } from '../../components/ui/CustomButton'
+import { CustomInput } from '../../components/ui/CustomInput'
 import styles from './Profile.module.scss'
 
 type TUserData = {
@@ -91,12 +92,10 @@ const Profile = () => {
 					<h2 className={styles.title}>Имя пользователя</h2>
 					{isNameEditing ? (
 						<div className={styles.inputContainer}>
-							<input
-								type="text"
+							<CustomInput
 								name="name"
-								ref={nameRef}
 								defaultValue={userData.name}
-								className={styles.input}
+								ref={nameRef}
 							/>
 							<CustomButton
 								type="button"
@@ -144,12 +143,10 @@ const Profile = () => {
 					<h2 className={styles.title}>Контактные данные</h2>
 					{isContactsEditing ? (
 						<div className={styles.inputContainer}>
-							<input
-								type="text"
+							<CustomInput
 								name="contacts"
-								ref={contactsRef}
 								defaultValue={userData.contacts}
-								className={styles.input}
+								ref={contactsRef}
 							/>
 							<CustomButton
 								type="button"
