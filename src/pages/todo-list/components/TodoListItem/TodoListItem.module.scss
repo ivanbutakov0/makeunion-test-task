@@ -1,0 +1,50 @@
+@use 'src/sass/_variables' as variables;
+
+.listItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+
+	.active {
+		text-decoration: line-through;
+	}
+
+	.content {
+		flex: 1 1 0%;
+		font-size: 18px;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: line-through;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		gap: 10px;
+
+		.pencilButton,
+		.trashButton {
+			width: 18px;
+			height: 18px;
+			cursor: pointer;
+			transition: variables.$transition-fast;
+		}
+
+		.pencilButton {
+			&:hover {
+				color: variables.$clr-text-accent;
+			}
+		}
+
+		.trashButton {
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
