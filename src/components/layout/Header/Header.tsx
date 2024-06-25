@@ -9,12 +9,15 @@ const Header = () => {
 			<nav>
 				<ul className={styles.list}>
 					<li className={styles.listItem}>
+						<CustomLink to="/todo">ToDo list</CustomLink>
+					</li>
+					<li className={styles.listItem}>
+						<CustomLink to="/users">Users</CustomLink>
+					</li>
+					<li className={styles.listItem}>
 						<CustomLink to="/" type="button">
 							My Profile
 						</CustomLink>
-					</li>
-					<li className={styles.listItem}>
-						<CustomLink to="/todo">ToDo list</CustomLink>
 					</li>
 				</ul>
 			</nav>
